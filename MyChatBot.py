@@ -42,8 +42,8 @@ if file is not None:
         # st.write(output)
 
         customized_prompt = ChatPromptTemplate.from_template(
-            """ You are my assistant tutor. Answer the question based on the following context and
-            if you did not get the context simply say "I don't know Jenny" :
+            """ You are an assistant. If the context helps, use it.
+            If not, use your own knowledge to answer.
             {context}
             Question: {input}
             """
