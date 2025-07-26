@@ -43,7 +43,7 @@ if file is not None:
 
         customized_prompt = ChatPromptTemplate.from_template(
             """ You are my assistant tutor. Answer the question based on the following context and
-            if you did not get the context simply say "I don't know Jenny" :
+            if you did not get the context simply say "I don't know" :
             {context}
             Question: {input}
             """
