@@ -19,11 +19,11 @@ if file is not None:
     text = ""
     for page in my_pdf.pages:
         text += page.extract_text()
-        st.write(text)
+        # st.write(text)
 
     splitter = RecursiveCharacterTextSplitter(separators =["\n"], chunk_size=200, chunk_overlap=50)
     chunks = splitter.split_text(text)
-    st.write(chunks)
+    # st.write(chunks)
 
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
